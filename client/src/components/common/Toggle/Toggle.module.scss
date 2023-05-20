@@ -1,0 +1,27 @@
+.Toggle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100%;
+    justify-content: center;
+    button {
+        background: none;
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    p {
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}

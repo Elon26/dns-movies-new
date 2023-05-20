@@ -1,0 +1,58 @@
+.MyButton {
+    height: 30px;
+    width: 150px;
+    outline: none;
+    font-weight: 700;
+    border-radius: 10px;
+    gap: 12px;
+    font-size: 14px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.gradient {
+    background-image: linear-gradient(270deg, #ea003d 0, #c447ff 100%);
+}
+
+.footer {
+    background-color: #1f1b2e;
+    &:hover {
+        background-color: #2e2844;
+    }
+}
+
+.mini {
+    width: 30px;
+}
+
+.large {
+    width: 200px;
+    height: 60px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.pink {
+    background-color: #ea003d;
+    &:hover {
+        background-color: #ff0f4d;
+    }
+}
+
+.medium {
+    height: 40px;
+    width: 100px;
+}

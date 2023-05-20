@@ -1,0 +1,18 @@
+.button {
+    position: relative;
+
+    p {
+        display: grid;
+        grid-template-columns: max-content;
+        position: absolute;
+        top: -25px;
+        padding: 4px;
+        border-radius: 8px;
+        right: 0;
+        color: white;
+        background-color: #1f1b2e;
+        font-size: 12px;
+        max-inline-size: 200px;
+        z-index: 100;
+    }
+}

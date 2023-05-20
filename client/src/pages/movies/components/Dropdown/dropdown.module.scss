@@ -1,0 +1,137 @@
+.wrapper {
+    flex: 0 0 calc(25% - 8px);
+    @media (max-width: 992px) {
+        flex: 0 0 calc(50% - 8px);
+    }
+    @media (max-width: 768px) {
+        flex: 0 0 100%;
+    }
+
+    background-color: #312b45;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.visibleArea {
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selectedFilterCol {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-transform: capitalize;
+    color: #878787;
+
+    & p:first-child {
+        color: #ffffff;
+    }
+}
+
+.arrowCol {
+    transition: transform 0.3s ease 0s;
+}
+
+.arrowColRev {
+    transform: rotate(180deg);
+}
+
+.dropdownArea {
+    position: absolute;
+    z-index: 3;
+    top: calc(100% + 5px);
+    border-radius: 12px;
+    border: 2px solid #8b8b8b;
+    width: 475px;
+    @media (max-width: 768px) {
+        width: 420px;
+    }
+    @media (max-width: 480px) {
+        width: 260px;
+    }
+
+    background-color: #312b45;
+    padding: 15px;
+    display: flex;
+    justify-self: start;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+}
+
+.dropdownLeft {
+    left: 0;
+}
+
+.dropdownRight {
+    right: 0;
+    @media (max-width: 768px) {
+        left: 0;
+    }
+}
+
+.dropdownOpen {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdownItem {
+    flex: 0 1 calc(33.333% - 10px);
+    @media (max-width: 480px) {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    color: #878787;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 0.3s ease 0s;
+
+    &::after {
+        content: "✓";
+        opacity: 0;
+        transition: opacity 0.3s ease 0s;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+
+            &::after {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        font-size: 11px;
+    }
+}
+
+.selectedItem {
+    color: #ffffff;
+    &::after {
+        opacity: 1;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            color: #ffffff;
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}

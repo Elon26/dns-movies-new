@@ -1,0 +1,25 @@
+.container {
+    position: relative;
+    inline-size: auto;
+    margin-inline: 12px;
+
+    .test {
+        position: relative;
+
+        & > button {
+            --direction: -15px;
+            position: absolute;
+            inline-size: 40px;
+            z-index: 1;
+
+            @media (max-width: 700px) {
+                --direction: -15px;
+            }
+        }
+    }
+}
+
+.filemCardWrapper {
+    width: 90%;
+    max-height: 240px;
+}

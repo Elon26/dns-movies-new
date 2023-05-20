@@ -1,0 +1,47 @@
+@import "../../../../styles/Variable.scss";
+
+.ReviewBlock {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    &__avatar {
+        width: 50px;
+        div {
+            width: 30px;
+            height: 30px;
+            font-weight: 700;
+            border-radius: 5px;
+            background: $main-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__mark {
+        display: flex;
+        gap: 8px;
+        .Dislike {
+            color: white;
+        }
+        .Like {
+            color: white;
+        }
+        color: green;
+        font-weight: 700;
+        font-size: 18px;
+        margin-left: auto;
+    }
+    &__header {
+        gap: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        opacity: 0.7;
+        .User {
+            font-weight: 700;
+        }
+    }
+    &__text {
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,25 @@
+.button {
+    block-size: 100%;
+    inline-size: 30px;
+    background-color: transparent;
+    font-size: 50px;
+    border: none;
+    color: var(--clr-btn-control, rgba(255, 255, 255, 0.72));
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: var(--clr-btn-control-hover, white);
+    }
+}
+.button_left {
+    @extend .button;
+    left: var(--direction);
+    justify-content: flex-start;
+}
+
+.button_right {
+    @extend .button;
+    right: var(--direction);
+    justify-content: flex-end;
+}

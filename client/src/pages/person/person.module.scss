@@ -1,0 +1,86 @@
+.Person {
+    display: flex;
+    width: 1216px;
+    margin: 0 auto;
+    justify-content: center;
+    @media screen and (max-width: "1220px") {
+        width: 100%;
+    }
+    &__img {
+        width: 120px;
+        height: 120px;
+        border-radius: 16px;
+        overflow: hidden;
+        // position: relative;
+        img {
+            height: auto;
+            margin-top: -25px;
+        }
+    }
+    h1 {
+        font-size: 56px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    p {
+        line-height: 20px;
+        opacity: 0.8;
+    }
+    h2 {
+        margin-top: 40px;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+            font-size: 15px;
+            opacity: 0.5;
+            font-weight: 100;
+        }
+    }
+    &__container {
+        width: 50%;
+        @media screen and (max-width: "1220px") {
+            width: 70%;
+        }
+        @media screen and (max-width: "800px") {
+            width: 90%;
+        }
+    }
+    &__filmsList {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__film {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        button {
+            height: 40px;
+            width: 140px;
+        }
+        img {
+            border-radius: 8px;
+        }
+    }
+    &__mainInfo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .Name {
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+        .Rating {
+            font-size: 13px;
+            line-height: 22px;
+            opacity: 0.7;
+        }
+    }
+}

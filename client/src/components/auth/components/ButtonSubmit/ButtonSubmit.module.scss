@@ -1,0 +1,12 @@
+.button {
+    background-color: #ea003d;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: white;
+
+    &:disabled {
+        background-color: #50041d;
+        color: rgba(255, 255, 255, 0.3);
+    }
+}

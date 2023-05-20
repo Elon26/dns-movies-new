@@ -1,0 +1,20 @@
+.carousel {
+    overflow: hidden;
+    display: grid;
+    padding-block-start: 24px;
+    padding-inline: 12px;
+
+    margin-inline: -12px -36px;
+}
+
+.carousel_slider {
+    @extend .carousel;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 1px + 1px) / var(--item-amount));
+}
+
+.carousel_list {
+    @extend .carousel;
+    grid-template-columns: repeat(var(--item-amount), 1fr);
+    row-gap: 24px;
+}

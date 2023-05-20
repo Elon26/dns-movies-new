@@ -1,0 +1,53 @@
+.pageDescription {
+    color: #b7b7b7;
+    line-height: 1.2;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    @media (max-width: 480px) {
+        font-size: 12px;
+    }
+}
+
+.filters {
+    background-color: #1f1b2e;
+    padding: 10px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.clearFilters {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    svg {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    transition: color 0.3s ease 0s;
+    @media (hover: hover) {
+        &:hover {
+            color: #c4053a;
+        }
+    }
+}
+
+.emptyMessage {
+    margin: 20px 10px 0px 10px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,114 @@
+.Header {
+    display: flex;
+    gap: 15px;
+    font-weight: 700;
+    margin-left: 30px;
+    position: relative;
+    align-items: center;
+    z-index: 999;
+    &__p {
+        opacity: 0.5;
+        z-index: 999;
+        cursor: pointer;
+        transition: 0.3s;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 15px;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__button {
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        button {
+            padding: 8px;
+            min-width: fit-content;
+        }
+    }
+}
+
+.User {
+    border: 2px solid white;
+    opacity: 0.5;
+    transition: 0.3s;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    height: 30px;
+    border-radius: 10px;
+    &:hover {
+        opacity: 1;
+    }
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        grid-template-rows: repeat(auto-fill, 100px);
+        min-height: 100%;
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 10px;
+    }
+    &__div {
+        overflow: hidden;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 20px;
+        height: 100px;
+        background-color: #312b45;
+        opacity: 0.5;
+        transition: 0.3s;
+        padding: 10px;
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+    &__p {
+        font-size: 18px;
+        font-family: 700;
+    }
+}
+
+.HeaderContainer {
+    display: flex;
+    z-index: 2;
+}
+
+.User__auth {
+    padding: 10px;
+}
+
+.Layout {
+    &__header {
+        display: flex;
+        align-items: center;
+        width: 1216px;
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 72px;
+        position: fixed;
+        color: white;
+        position: relative;
+        justify-content: space-between;
+        img {
+            position: relative;
+            z-index: 999;
+        }
+    }
+}
+
+.UserContainer {
+    margin-top: 100px;
+    display: flex;
+}

@@ -1,0 +1,27 @@
+.Review {
+    margin-bottom: 70px;
+    max-height: 70vh;
+    overflow-y: auto;
+    &__inp {
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+        gap: 30px;
+        input {
+            width: 100%;
+            height: 40px;
+        }
+        button {
+            height: 40px;
+        }
+        div {
+            width: 100%;
+        }
+    }
+    .Ref {
+        height: 60px;
+    }
+    input {
+        min-width: 100%;
+    }
+}

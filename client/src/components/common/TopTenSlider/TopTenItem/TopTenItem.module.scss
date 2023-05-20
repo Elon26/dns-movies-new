@@ -1,0 +1,17 @@
+.item {
+    display: grid;
+    grid-template-rows: 14fr 1fr;
+    padding-inline-end: 24px;
+
+    .container {
+        aspect-ratio: 224/456;
+        position: relative;
+
+        img {
+            max-inline-size: 100%;
+            block-size: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+}

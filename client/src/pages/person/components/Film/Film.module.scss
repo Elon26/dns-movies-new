@@ -1,0 +1,53 @@
+.Film {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    button {
+        height: 40px;
+        width: 140px;
+    }
+    img {
+        border-radius: 8px;
+    }
+    p {
+        line-height: 10px;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+        width: 100%;
+        .Year {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+        .Name {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+        .Rating {
+            font-size: 13px;
+            line-height: 22px;
+            opacity: 0.7;
+        }
+    }
+    &__mainInfo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .Name {
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+        .Rating {
+            font-size: 13px;
+            line-height: 22px;
+            opacity: 0.7;
+        }
+    }
+}

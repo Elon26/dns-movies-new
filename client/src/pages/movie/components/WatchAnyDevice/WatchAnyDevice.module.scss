@@ -1,0 +1,122 @@
+.WatchAnyDevice {
+    display: grid;
+    grid-template-columns: 1fr 536px;
+    margin-top: 20px;
+    height: 272px;
+    overflow-y: hidden;
+    justify-content: space-between;
+    width: 100%;
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 1fr 256px;
+    }
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr min-content;
+        background-color: #1f1b2e;
+        border-radius: 10px;
+        padding: 8%;
+        height: 400px;
+        width: 100%;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        @media screen and (max-width: 600px) {
+            grid-column: 1;
+            grid-row: 2;
+            h1 {
+                font-size: 17px !important;
+            }
+            p {
+                font-size: 12px !important;
+            }
+            button {
+                width: 100%;
+                height: 40px;
+            }
+            margin-top: 20px;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 25px;
+        }
+        p {
+            font-size: 16px;
+            opacity: 0.7;
+        }
+    }
+    &__img {
+        @media screen and (max-width: 600px) {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        overflow: hidden;
+        position: relative;
+        img {
+            height: 100%;
+            width: 536px;
+        }
+        .Container {
+            z-index: 3;
+            position: relative;
+        }
+        .Big {
+            width: 337px;
+            top: 0;
+            left: 100px;
+            height: 192px;
+            position: absolute;
+            z-index: 1;
+        }
+        .Tablet {
+            width: 200px;
+            height: 136px;
+            right: 42px;
+            bottom: 0;
+            z-index: 4;
+            position: absolute;
+        }
+        .Mini {
+            width: 188px;
+            height: 102px;
+            right: 48px;
+            bottom: 7px;
+            position: absolute;
+            z-index: 3;
+        }
+        @media screen and (max-width: 600px) {
+            margin: 0 auto;
+            width: 286px;
+            height: 136px;
+            .Container {
+                width: 286px;
+                height: 136px;
+            }
+            .Mini {
+                width: 94px;
+                height: 51px;
+                right: 45px;
+                bottom: 3px;
+                z-index: 3;
+            }
+            .Big {
+                width: 176px;
+                height: 96px;
+                left: 55px;
+            }
+            .Tablet {
+                width: 100px;
+                height: 67px;
+            }
+        }
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+}

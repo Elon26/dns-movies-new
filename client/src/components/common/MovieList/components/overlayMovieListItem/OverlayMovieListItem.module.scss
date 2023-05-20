@@ -1,0 +1,40 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(31, 27, 46, 0.9);
+    inline-size: 100%;
+    block-size: 100%;
+    padding: 10px;
+    border-radius: var(--border-radius-slider-item);
+
+    .container {
+        position: relative;
+        block-size: 100%;
+
+        .icons {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: grid;
+            justify-content: flex-end;
+
+            button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                z-index: 100;
+
+                svg {
+                    stroke: white;
+                }
+            }
+        }
+        .info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            max-inline-size: 100%;
+        }
+    }
+}

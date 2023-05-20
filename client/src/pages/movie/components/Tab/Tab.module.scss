@@ -1,0 +1,46 @@
+@import "../../../../styles/Variable.scss";
+
+.Tab {
+    display: flex;
+    transition: 0.3s;
+    flex-direction: column;
+    p {
+        opacity: 0.6;
+    }
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+    }
+    p {
+        padding-bottom: 10px;
+    }
+    &:after {
+        opacity: 0;
+        transition: 0.3s;
+        color: $pink;
+        width: inherit;
+        content: ".";
+        margin-bottom: -2px;
+        overflow: hidden;
+        max-height: 4px;
+        background-color: $pink;
+    }
+    transition: 0.3s;
+    &__active {
+        p {
+            opacity: 1;
+            cursor: default;
+        }
+        &:after {
+            opacity: 1;
+            color: $pink;
+            width: inherit;
+            content: ".";
+            margin-bottom: -2px;
+            overflow: hidden;
+            max-height: 4px;
+            background-color: $pink;
+        }
+    }
+}

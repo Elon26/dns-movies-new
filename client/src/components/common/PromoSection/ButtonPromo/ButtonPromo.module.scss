@@ -1,0 +1,24 @@
+.button {
+    display: inline-flex;
+    max-inline-size: 100%;
+    column-gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 12px;
+    background-color: #1f1b2e;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #fff;
+
+    &:hover {
+        background-color: #231f34;
+    }
+}
+
+.button_priority {
+    @extend .button;
+    background-image: url(https://solea-parent.dfs.ivi.ru/picture/bypass/teaserTilePattern_a.svg);
+}

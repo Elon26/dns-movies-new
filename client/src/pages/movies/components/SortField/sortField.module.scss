@@ -1,0 +1,65 @@
+.wrapper {
+    margin: 20px 0 20px 15px;
+    position: relative;
+}
+
+.visibleArea {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: bold;
+
+    svg {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.arrowCol {
+    transition: transform 0.3s ease 0s;
+}
+
+.arrowColRev {
+    transform: rotate(180deg);
+}
+
+.dropdownArea {
+    position: absolute;
+    z-index: 2;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 200px;
+    background-color: #312b45;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+}
+
+.dropdownOpen {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdownItem {
+    color: #878787;
+    transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+    padding: 15px;
+    font-weight: bold;
+
+    @media (hover: hover) {
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.4);
+            color: #ffffff;
+        }
+    }
+}
+
+.selectedItem {
+    color: #ffffff;
+    border-left: 4px solid #c4053a;
+}

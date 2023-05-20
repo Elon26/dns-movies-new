@@ -1,0 +1,91 @@
+.Footer {
+    margin-top: 30px;
+    &__about {
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        font-size: 15px;
+        p {
+            opacity: 0.5;
+            transition: 0.3s;
+            cursor: pointer;
+            margin: 0;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        h4 {
+            margin: 0;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    &__span {
+        background-image: linear-gradient(-45deg, #c447ff, #ea003d);
+        background-clip: text;
+        color: transparent;
+        opacity: 1;
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: row !important;
+    }
+    &__service {
+        width: 310px;
+    }
+    &__square {
+        width: 104px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        svg {
+            height: 60px;
+            width: 60px;
+        }
+        height: 104px;
+        border-radius: 20px;
+        background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#a869f0),
+            to(#834cc2)
+        );
+        background: -webkit-linear-gradient(top, var(#a869f0) 0%, #834cc2 100%);
+        background: -o-linear-gradient(top, #a869f0 0%, #834cc2 100%);
+        background: linear-gradient(180deg, #a869f0 0%, #834cc2 100%);
+        box-shadow: 0 0 104px #a869f0;
+    }
+    &__advertising {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 30px !important;
+        width: 286px;
+    }
+    &__apps {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        p {
+            font-size: 12px;
+            margin: 0;
+            text-align: start;
+        }
+        span {
+            font-size: 20px;
+        }
+
+        .Social {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

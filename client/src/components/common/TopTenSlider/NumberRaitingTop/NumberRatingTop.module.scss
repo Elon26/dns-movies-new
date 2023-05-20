@@ -1,0 +1,21 @@
+.numbers {
+    position: relative;
+    display: flex;
+
+    .item {
+        position: relative;
+        inline-size: 48px;
+        block-size: 66px;
+
+        @media (max-width: 730px) {
+            inline-size: 32px;
+            block-size: 44px;
+        }
+
+        img {
+            max-inline-size: 100%;
+            block-size: auto;
+            object-fit: contain;
+        }
+    }
+}

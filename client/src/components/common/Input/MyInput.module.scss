@@ -1,0 +1,38 @@
+.MyInput {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    input {
+        height: 30px;
+        font-size: 18px;
+        width: 100%;
+        position: relative;
+        border-radius: 5px;
+        padding: 5px;
+        padding-left: 10px;
+        outline: none;
+        border: none;
+        background-color: #ededed;
+        transition: 0.3s;
+        color: rgb(0, 0, 0);
+    }
+    button {
+        position: absolute;
+        right: 10px;
+        background: none;
+        width: 10px;
+        height: 10px;
+        top: auto;
+        bottom: auto;
+        outline: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            background-color: rgb(58, 58, 58);
+            fill: gray;
+        }
+    }
+}

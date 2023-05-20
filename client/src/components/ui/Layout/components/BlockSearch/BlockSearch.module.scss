@@ -1,0 +1,15 @@
+@import "../../../../../styles/Variable.scss";
+
+.BlockSearch {
+    display: flex;
+    gap: 10px;
+    &__icon {
+        svg {
+            color: $pink;
+        }
+    }
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 18px;
+}

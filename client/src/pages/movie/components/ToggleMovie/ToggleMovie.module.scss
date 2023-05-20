@@ -1,0 +1,8 @@
+.ToggleMovie {
+    opacity: 0.5 !important;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        opacity: 1 !important;
+    }
+}

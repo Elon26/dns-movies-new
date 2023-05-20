@@ -1,0 +1,33 @@
+.Trailer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 100% !important;
+    min-height: 100%;
+    div {
+        div {
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+    h1 {
+        font-size: 50px;
+    }
+}
+
+.Content {
+    width: fit-content;
+    cursor: pointer;
+    gap: 0;
+    @media screen and (max-width: 800px) {
+        div,
+        img,
+        p {
+            width: 200px;
+            height: 150px;
+            font-size: 12px;
+        }
+    }
+}

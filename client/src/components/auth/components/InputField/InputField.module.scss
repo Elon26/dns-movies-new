@@ -1,0 +1,14 @@
+.input {
+    inline-size: 100%;
+    padding-inline: 36px 12px;
+    padding-block: 18px 2px;
+    background-color: #d9d7e0;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.invalid {
+    @extend .input;
+    outline: 1px solid red;
+}

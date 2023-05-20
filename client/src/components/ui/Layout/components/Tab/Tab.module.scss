@@ -1,0 +1,45 @@
+.Tab {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(31, 27, 46, 0.88);
+    backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    gap: 10%;
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+    div {
+        cursor: pointer;
+        display: flex;
+        opacity: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        p {
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 0.5%;
+            text-overflow: ellipsis;
+        }
+    }
+    &__last {
+        width: 45px;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.Container {
+    height: 60px;
+}
