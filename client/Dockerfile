@@ -2,10 +2,10 @@ FROM node:19-alpine
 
 WORKDIR /app
 
-COPY package*.json .
+COPY client/package.json /app/
 
 RUN npm install --legacy-peer-deps
 
-COPY . .
+COPY client/ /app/
 
 CMD ["npm", "run", "start"]
