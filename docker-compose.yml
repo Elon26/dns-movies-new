@@ -114,4 +114,20 @@ services:
       - ./server:/app
       - /app/node_modules
     ports:
-      - ${API_GATEWAY_PORT}:3000
+      - ${API_GATEWAY_PORT}:3001
+
+  client:
+    container_name: client
+    build:
+      context: ./client
+      dockerfile: ./client/
+    depends_on:
+      - api
+      - movies
+      - persons
+      - social
+      - auth
+      - rabbitmq
+      - postgres
+    ports:
+      - 3000:3000
