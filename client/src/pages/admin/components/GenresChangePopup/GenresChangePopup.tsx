@@ -68,7 +68,7 @@ const GenresChangePopup = ({
                 FAKEIVI_ACCESS_TOKEN
             ) as string;
 
-            await axiosAuth.post(`api/movies/genres/${genreId}`, objForSend, {
+            await axiosAuth.put(`api/movies/genres/${genreId}`, objForSend, {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${accessToken}`
